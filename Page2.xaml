@@ -1,0 +1,77 @@
+﻿<Page x:Class="WpfApp1.Page2"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp1"
+      mc:Ignorable="d" 
+     
+      Title="Page2"  Height="870" Width="470">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition>
+
+            </ColumnDefinition>
+            <ColumnDefinition>
+
+            </ColumnDefinition>
+            <ColumnDefinition>
+
+            </ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+
+        </Grid.RowDefinitions>
+        <TextBlock Grid.ColumnSpan="3" Background="#D6B98D"/>
+
+        <Button  Margin="54,631,54,164" Grid.ColumnSpan="3" Foreground="White" Background="#59B44A" FontSize="35">Создать бронь</Button>
+        <TextBlock Grid.ColumnSpan="2" FontSize="30" FontWeight="Bold" Margin="10,417,111,375"><Run Text="Укажите"/></TextBlock>
+        <TextBlock Grid.ColumnSpan="2" FontSize="30" FontWeight="Bold" Margin="10,506,111,286"><Run Text="Кол-во"/></TextBlock>
+        <TextBlock Grid.ColumnSpan="2" FontSize="30" FontWeight="Bold" Margin="10,548,111,244"><Run Text="гостей:"/></TextBlock>
+        <TextBox Margin="122,560,75,283" FontSize="22" Grid.ColumnSpan="3"/>
+        <TextBox Margin="122,468,75,375" FontSize="22" Grid.ColumnSpan="3"/>
+        <TextBox Margin="122,381,75,462" FontSize="22" Grid.ColumnSpan="3"/>
+
+
+        <TextBlock Grid.ColumnSpan="3" Background="#BD9962" Margin="0,0,150,0"/>
+        <TextBlock Grid.ColumnSpan="3" Margin="0,0,0,767" TextAlignment="Center"  Background="LightGray"  FontWeight="Bold" FontSize="45" Text="Обрыгаловка"/>
+        <Button x:Name="But2" Click="But2_Click"  BorderBrush="LightGray" Background="LightGray" Margin="0,0,79,767">
+            <Image  Source="/pngwing.com (2).png" Stretch="Fill" Width="78" RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90.062"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+        </Button>
+        <TextBlock Grid.ColumnSpan="3" TextAlignment="Center" Margin="0,771,0,0" Background="LightGray"  FontWeight="Bold" FontSize="45" Text="Add block"/>
+        <Ellipse Fill="LightGray" Margin="16,147,47,631" RenderTransformOrigin="0.5,0.5" >
+            <Ellipse.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.046"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        <TextBlock Grid.ColumnSpan="3" FontSize="30" FontWeight="Bold" Margin="127,157,150,635"><Run Language="ru-ru" Text="Имя"/></TextBlock>
+        <TextBlock FontSize="30"  Margin="0,196,0,596" HorizontalAlignment="Right" Width="192" Grid.ColumnSpan="2"><Run Text="89812534547"/></TextBlock>
+        <Button x:Name="but7" Click="but4_Click"  Background="#BD9962" BorderBrush="#BD9962" Margin="42,134,55,674" RenderTransformOrigin="1.652,0.774" Grid.Column="1">
+            <Image Source="/3643749-edit-pen-pencil-write-writing_113397.png" Stretch="Fill" Grid.Column="1" Height="52" Width="47"/>
+        </Button>
+        <TextBlock Grid.ColumnSpan="2" FontSize="25" Foreground="White" Margin="48,656,41,136"><Run Text="Номер заведения:"/></TextBlock>
+        <TextBlock Grid.ColumnSpan="2" FontSize="25" Foreground="White" Margin="70,688,19,104"><Run Text="+79522193746"/></TextBlock>
+        <Button x:Name="but3" Click="but4_Click" Background="#BD9962" FontSize="35"  FontWeight="Bold" HorizontalAlignment="Left" BorderBrush="#BD9962" Margin="31,279,132,529" RenderTransformOrigin="1.652,0.774" Grid.ColumnSpan="2">
+            Бонусы
+        </Button>
+        <Button x:Name="but4" Click="but4_Click" Background="#BD9962" FontSize="35" HorizontalAlignment="Left"  FontWeight="Bold" BorderBrush="#BD9962" Margin="31,341,132,467" RenderTransformOrigin="1.652,0.774" Grid.ColumnSpan="2" Content="История"/>
+        <Button x:Name="but5" Click="but4_Click" Background="#BD9962" FontSize="35" HorizontalAlignment="Left" FontWeight="Bold" BorderBrush="#BD9962" Margin="31,401,132,407" RenderTransformOrigin="1.652,0.774" Grid.ColumnSpan="2" Content="О нас"/>
+        <Button x:Name="but6" Click="but4_Click" Background="#BD9962" FontSize="35" HorizontalAlignment="Left" FontWeight="Bold" BorderBrush="#BD9962" Margin="31,468,132,340" RenderTransformOrigin="1.652,0.774" Grid.ColumnSpan="2" Content="Акции"/>
+    </Grid>
+</Page>
